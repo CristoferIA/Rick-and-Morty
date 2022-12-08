@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Roboto&display=swap');
+.App__search{
+    width: 100%;
+    height: 400px;
+    background-image: url("./assets/rick-and-morty.PNG");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   /*background-attachment: fixed;*/
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.App__search>h1{
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 6rem;
+    color: rgb(0, 247, 255);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    font-weight: lighter;
+    margin-top: 3rem;
+}
+
+.App_form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.App_form>input{
+    width: 100%;
+    height: 60px;
+    max-width: 800px;
+    border-radius: 0.1rem;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.1rem 0.6rem; 
+    outline: none; 
+    border-radius: 5px 0px 0px 5px;
+      
+}
+.App_form>input:focus{
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, .5);
+}
+
+.App_form>button{
+    width: 60px;
+    height: 60px;
+    border: none;
+    font-size: 2.2rem;
+    cursor: pointer;
+    color: rgb(218, 220, 228);
+    background-color: rgb(37, 37, 37);
+    border-radius: 0px 5px 5px 0px;    
+}
+.App_form>button:hover{
+    background-color: rgb(77, 77, 77);
+}
+.App_form>button:active{
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, .5);
+}
+
+.App__info{
+    background-color: rgb(32, 35, 41);
+    /*background-color: red;*/
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    color: white;
+}
+.App__info>h2{
+    font-size: 2rem;
+}
+
+.App__info>ul{
+    display: flex;
+    gap: 8rem;
+}
+
+.App__info>ul>li{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+.App__info>ul>li>span:nth-child(1){
+    font-size: 1.5rem;
+}
+
+
+@media (max-width : 768px) {
+
+    .App__search{
+        background-image: url("./assets/rick-and-morty-2.PNG");       
+        height: 320px;
+    }
+
+    .App__info>ul{
+        display: flex;
+        gap: 2rem;
+    }  
+
+    .App_form{
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+    .App__search>h1{
+        font-size: 3.5rem;
+        margin-top: 10rem;
+    }
+}
+
